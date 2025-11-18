@@ -34,7 +34,7 @@ def get_subscription_by_phone(phone_number):
 def parse_next_renewal_date(date_str):
     """Convert nextRenewalDate string into a datetime object safely."""
     if not date_str:
-        return None
+        return datetime.now() + timedelta(days=1)
     try:
         # Try full ISO format first
         return datetime.fromisoformat(date_str)
