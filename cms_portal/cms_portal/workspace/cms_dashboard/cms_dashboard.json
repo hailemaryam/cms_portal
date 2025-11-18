@@ -1,7 +1,7 @@
 {
  "app": "Library Management",
  "charts": [],
- "content": "[{\"id\":\"py2PSsULLl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CMS Dashboard</span>\",\"col\":12}},{\"id\":\"LAm8-_CLBJ\",\"type\":\"card\",\"data\":{\"card_name\":\"CMS\",\"col\":4}},{\"id\":\"b7g_CeuME_\",\"type\":\"card\",\"data\":{\"card_name\":\"Subcscription\",\"col\":4}}]",
+ "content": "[{\"id\":\"py2PSsULLl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CMS Dashboard</span>\",\"col\":12}},{\"id\":\"LAm8-_CLBJ\",\"type\":\"card\",\"data\":{\"card_name\":\"CMS\",\"col\":4}},{\"id\":\"b7g_CeuME_\",\"type\":\"card\",\"data\":{\"card_name\":\"Subcscription\",\"col\":4}},{\"id\":\"qBPEunEO3O\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Subscribers\",\"col\":4}}]",
  "creation": "2025-11-18 21:51:03.133225",
  "custom_blocks": [],
  "docstatus": 0,
@@ -64,11 +64,16 @@
    "type": "Link"
   }
  ],
- "modified": "2025-11-18 21:56:10.903857",
+ "modified": "2025-11-18 22:05:16.017801",
  "modified_by": "Administrator",
  "module": "CMS Portal",
  "name": "CMS Dashboard",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "Active Subscribers",
+   "number_card_name": "Active Subscriber"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
