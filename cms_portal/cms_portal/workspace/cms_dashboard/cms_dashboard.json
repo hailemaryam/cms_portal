@@ -1,0 +1,81 @@
+{
+ "app": "Library Management",
+ "charts": [],
+ "content": "[{\"id\":\"py2PSsULLl\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">CMS Dashboard</span>\",\"col\":12}},{\"id\":\"LAm8-_CLBJ\",\"type\":\"card\",\"data\":{\"card_name\":\"CMS\",\"col\":4}},{\"id\":\"b7g_CeuME_\",\"type\":\"card\",\"data\":{\"card_name\":\"Subcscription\",\"col\":4}}]",
+ "creation": "2025-11-18 21:51:03.133225",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "drag",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "CMS Dashboard",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "CMS",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Post Category",
+   "link_count": 0,
+   "link_to": "PostCategory",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Post",
+   "link_count": 0,
+   "link_to": "Post",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Subcscription",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Subscribers",
+   "link_count": 0,
+   "link_to": "Subscription",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-18 21:56:10.903857",
+ "modified_by": "Administrator",
+ "module": "CMS Portal",
+ "name": "CMS Dashboard",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [],
+ "title": "CMS Dashboard",
+ "type": "Workspace"
+}

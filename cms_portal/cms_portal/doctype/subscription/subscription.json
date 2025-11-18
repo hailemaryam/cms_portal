@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:phone_number",
+ "creation": "2025-11-18 21:30:57.130496",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cx1u",
+  "phone_number",
+  "registration_date",
+  "status",
+  "subscription_type",
+  "next_renewal_time",
+  "last_otp",
+  "otp_sent_time",
+  "deactivation_date",
+  "product_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cx1u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "phone_number",
+   "unique": 1
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Datetime",
+   "label": "registration_date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Active\nNot Active"
+  },
+  {
+   "fieldname": "subscription_type",
+   "fieldtype": "Select",
+   "label": "subscription_type",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "next_renewal_time",
+   "fieldtype": "Datetime",
+   "label": "next_renewal_time"
+  },
+  {
+   "fieldname": "last_otp",
+   "fieldtype": "Data",
+   "label": "last_otp"
+  },
+  {
+   "fieldname": "otp_sent_time",
+   "fieldtype": "Datetime",
+   "label": "otp_sent_time"
+  },
+  {
+   "fieldname": "deactivation_date",
+   "fieldtype": "Datetime",
+   "label": "deactivation_date"
+  },
+  {
+   "fieldname": "product_number",
+   "fieldtype": "Data",
+   "label": "product_number"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-18 21:36:44.388092",
+ "modified_by": "Administrator",
+ "module": "CMS Portal",
+ "name": "Subscription",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
