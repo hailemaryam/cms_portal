@@ -9,18 +9,20 @@ def generate_four_digit_code():
     return random.randint(1000, 9999)
 
 def get_subscription_type(product_number):
-    return {
-        "1000009380": "Daily",
-        "10000302782": "Weekly",
-        "10000302783": "Monthly"
-    }.get(product_number, "Unknown")
+    return "Daily"
+    # return {
+    #     "1000009380": "Daily",
+    #     "10000302782": "Weekly",
+    #     "10000302783": "Monthly"
+    # }.get(product_number, "Unknown")
 
 def get_subscription_fee(product_number):
-    return {
-        "10000302767": 3,
-        "10000302782": 15,
-        "10000302783": 75
-    }.get(product_number, 0)
+    return 2
+    # return {
+    #     "10000302767": 3,
+    #     "10000302782": 15,
+    #     "10000302783": 75
+    # }.get(product_number, 0)
 
 def get_subscription_by_phone(phone_number):
     """Safely get subscription by phone_number field."""
