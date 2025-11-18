@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import random
 import requests
 import json
+from urllib.parse import quote
 
 def generate_four_digit_code():
     return random.randint(1000, 9999)
@@ -159,19 +160,15 @@ def sendOTP():
     frappe.db.commit()
     text = "Dear Customer " + str(otp_code) + " is your pin code"
     # --- API CALL to send OTP ---
-    sms_url = "https://onevas.alet.io/api/partnerSms/send"
-    sms_payload = {
-        "phone_number": phone_number,
-        "application_key": "MAM7A82XJZKSB1RK6VTNQJNIKITEUDU1",
-        "text": text,
-        "product_number": subscription.product_number
-    }
-
-    headers = {"Content-Type": "application/json"}
+    from_number = "9735"  # Set your sender ID/number here
+    sms_url = ("http://localhost:13013/cgi-bin/sendsms?username=apiuser&password=api@1234&from=" 
+               + from_number 
+               + "&to=" + phone_number 
+               + "&text=" + quote(text))
 
     try:
         # Make the HTTP request
-        response = requests.post(sms_url,verify=False, headers=headers, json=sms_payload, timeout=10)
+        response = requests.get(sms_url, verify=False, timeout=10)
         raw_response = response.text.strip()
 
         # Log details for debugging
