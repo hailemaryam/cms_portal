@@ -180,7 +180,7 @@ def sendOTP():
         })
 
         # Check for HTTP errors
-        if response.status_code != 200:
+        if response.status_code != 202:
             frappe.log_error(f"SMS API returned {response.status_code}: {raw_response}", "OTP Send Error")
             return {"error": f"Failed to send OTP: {raw_response}"}
 
