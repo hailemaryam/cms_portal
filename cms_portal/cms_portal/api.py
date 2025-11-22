@@ -150,8 +150,8 @@ def sendOTP():
     subscription = get_subscription_by_phone(phone_number)
     if not subscription:
         frappe.throw("Subscription not found")
-    if subscription.next_renewal_time < datetime.now():
-        frappe.throw("Subscriber has no enough balance.")
+    # if subscription.next_renewal_time < datetime.now():
+    #     frappe.throw("Subscriber has no enough balance.")
     # Generate and save OTP
     otp_code = generate_four_digit_code()
     subscription.last_otp = otp_code
