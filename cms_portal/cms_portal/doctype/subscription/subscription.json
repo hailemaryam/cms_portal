@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:phone_number",
  "creation": "2025-11-18 21:30:57.130496",
@@ -74,7 +75,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-23 14:36:05.057988",
+ "modified": "2025-12-12 22:25:42.591128",
  "modified_by": "Administrator",
  "module": "CMS Portal",
  "name": "Subscription",
@@ -86,6 +87,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
